@@ -1,50 +1,27 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Pomodoro Timer
 
-Currently, two official plugins are available:
+Este é um aplicativo de Pomodoro construído com React, TypeScript e Vite. O projeto permite acompanhar o tempo de trabalho e descanso usando a técnica Pomodoro, com a opção de personalizar o tempo de trabalho, os intervalos curtos e longos, além de configurar o número de ciclos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Tecnologias Utilizadas
+React: Biblioteca para criar interfaces de usuário.
 
-## Expanding the ESLint configuration
+TypeScript: Superset do JavaScript que adiciona tipagem estática.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Vite: Build tool rápida e moderna para aplicações web.
 
-- Configure the top-level `parserOptions` property like this:
+ESLint: Ferramenta para garantir a qualidade do código.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Hooks personalizados: Usados para gerenciar a lógica do temporizador.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+# Funcionalidades
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Pomodoro Timer: Foca no tempo de trabalho e de descanso.
+
+Ciclos: Contabiliza o número de ciclos completos.
+
+Relatório: Exibe o tempo trabalhado, os ciclos concluídos e o número de Pomodoros.
+
+Áudio: Sons de início e fim para marcar o início de um ciclo de trabalho ou descanso.
